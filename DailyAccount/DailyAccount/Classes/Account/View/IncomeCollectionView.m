@@ -7,14 +7,36 @@
 //
 
 #import "IncomeCollectionView.h"
+#import "ButtonCollectionViewCell.h"
+#import "AccountBookViewController.h"
 
 @interface IncomeCollectionView ()<UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic, strong) NSMutableArray *buttonName;
+@property (nonatomic, strong) NSMutableArray *picName;
 
 @end
 
 @implementation IncomeCollectionView
 
-static NSString *collectionViewCellIdentifier = @"collectionViewCell";
+static NSString *collectionViewCellIdentifier = @"incomeCell";
+
+- (NSMutableArray *)buttonName
+{
+    if (_buttonName == nil)
+    {
+        _buttonName = [NSMutableArray arrayWithObjects:@"工资", @"生活费", @"红包", @"零花", @"外快", @"投资", @"借入", @"奖金", @"还款", @"报销", @"现金", @"退款", @"支付宝", @"其他", nil];
+    }
+    return _buttonName;
+}
+- (NSMutableArray *)picName
+{
+    if (_picName == nil)
+    {
+        _picName = [NSMutableArray arrayWithObjects:@"gongzi", @"shenghuo", @"hongbao", @"linghuaqian", @"waikuai", @"shouru", @"jieru", @"jiangjin", @"huankuan", @"baoxiao", @"xianjin", @"tuikuan", @"zhifubao", @"shouruqita", nil];
+    }
+    return _picName;
+}
 
 + (IncomeCollectionView *)incomeContentCollectionView
 {
@@ -29,26 +51,29 @@ static NSString *collectionViewCellIdentifier = @"collectionViewCell";
     incomeCollectionView.dataSource = incomeCollectionView;
     incomeCollectionView.delegate = incomeCollectionView;
     
-    [incomeCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:collectionViewCellIdentifier];
+    [incomeCollectionView registerClass:[ButtonCollectionViewCell class] forCellWithReuseIdentifier:collectionViewCellIdentifier];
     return incomeCollectionView;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 20;
+    return self.buttonName.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"collectionViewCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor lightGrayColor];
+    ButtonCollectionViewCell *cell = (ButtonCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellIdentifier forIndexPath:indexPath];
+//    cell.backgroundColor = [UIColor lightGrayColor];
+    cell.buttonImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.picName[indexPath.row]]];
+    cell.buttonName.text = self.buttonName[indexPath.row];
     return cell;
 }
 
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+//    AccountBookViewController *accountBookVC = [AccountBookViewController new];
+//    accountBookVC.
 }
 
 @end

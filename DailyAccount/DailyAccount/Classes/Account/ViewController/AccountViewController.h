@@ -10,4 +10,9 @@
 
 @interface AccountViewController : UIViewController
 
+// 收支价格textField
+@property (nonatomic, strong) UITextField *prictTF;
+// 类型图片名称
+@property (nonatomic, copy) NSString *theName;
+
 @end

@@ -9,6 +9,7 @@
 #import "IncomeCollectionView.h"
 #import "ButtonCollectionViewCell.h"
 #import "AccountBookViewController.h"
+#import "AccountManger.h"
 
 @interface IncomeCollectionView ()<UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -72,8 +73,8 @@ static NSString *collectionViewCellIdentifier = @"incomeCell";
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    AccountBookViewController *accountBookVC = [AccountBookViewController new];
-//    accountBookVC.
+    [AccountManger shareInstance].number = NO;
+    self.inblock(self.buttonName[indexPath.row], self.picName[indexPath.row]);
 }
 
 @end

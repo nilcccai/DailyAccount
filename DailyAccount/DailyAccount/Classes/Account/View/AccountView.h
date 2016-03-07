@@ -10,4 +10,6 @@
 
 @interface AccountView : UIView
 
+@property (nonatomic, strong) UISegmentedControl *segment;
+
 @end

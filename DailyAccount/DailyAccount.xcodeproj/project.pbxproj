@@ -57,6 +57,7 @@
 		C288C4271C88406C0081CA09 /* AccountBookVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = C288C4261C88406C0081CA09 /* AccountBookVIew.m */; };
 		C288C42A1C885DEC0081CA09 /* AccountBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C288C4291C885DEC0081CA09 /* AccountBookViewController.m */; };
 		C288C42D1C8867B00081CA09 /* AccountBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C288C42C1C8867B00081CA09 /* AccountBookCell.m */; };
+		C2C9D8821C8D366F00A6212A /* AccountManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9D8811C8D366F00A6212A /* AccountManger.m */; };
 		FDF92DA61C8AB75100B0ABD5 /* CalendarButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF92D921C8AB75100B0ABD5 /* CalendarButtonController.m */; };
 		FDF92DA71C8AB75100B0ABD5 /* CalendarButtonController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF92D931C8AB75100B0ABD5 /* CalendarButtonController.xib */; };
 		FDF92DA81C8AB75100B0ABD5 /* AlarmButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF92D951C8AB75100B0ABD5 /* AlarmButtonController.m */; };
@@ -184,6 +185,8 @@
 		C288C4291C885DEC0081CA09 /* AccountBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountBookViewController.m; sourceTree = "<group>"; };
 		C288C42B1C8867B00081CA09 /* AccountBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountBookCell.h; sourceTree = "<group>"; };
 		C288C42C1C8867B00081CA09 /* AccountBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountBookCell.m; sourceTree = "<group>"; };
+		C2C9D8801C8D366F00A6212A /* AccountManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManger.h; sourceTree = "<group>"; };
+		C2C9D8811C8D366F00A6212A /* AccountManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManger.m; sourceTree = "<group>"; };
 		D4328AB333B76A497BCA3CEE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EB73A898A73925E7E2427018 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FDF92D911C8AB75100B0ABD5 /* CalendarButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarButtonController.h; sourceTree = "<group>"; };
@@ -319,6 +322,8 @@
 		C224B5D31C8596A000A89D75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C2C9D8801C8D366F00A6212A /* AccountManger.h */,
+				C2C9D8811C8D366F00A6212A /* AccountManger.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -842,6 +847,7 @@
 				C26983401C8AC159004849FF /* MASViewConstraint.m in Sources */,
 				C288C3E21C87E7630081CA09 /* LLLockViewController.m in Sources */,
 				FDF92DE81C8AB82900B0ABD5 /* AddCell.m in Sources */,
+				C2C9D8821C8D366F00A6212A /* AccountManger.m in Sources */,
 				FDF92DB61C8AB79700B0ABD5 /* UIColor+ZXLazy.m in Sources */,
 				FDF92DAC1C8AB75100B0ABD5 /* ExpireViewController.m in Sources */,
 			);

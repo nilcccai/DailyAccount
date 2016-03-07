@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^payBlock)(NSString *name, NSString *pic);
+
 @interface PayCollectionView : UICollectionView
 
 + (PayCollectionView *)payContentCollectionView;
+
+@property (nonatomic, copy) payBlock payblock;
+
 
 @end

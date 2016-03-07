@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^incomeBlock)(NSString *name, NSString *pic);
+
 @interface IncomeCollectionView : UICollectionView
 
 + (IncomeCollectionView *)incomeContentCollectionView;
+
+@property (nonatomic, copy) incomeBlock inblock;
 
 @end

@@ -10,12 +10,20 @@
 
 @implementation AccountView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self createView];
+    }
+    return self;
 }
-*/
+
+- (void)createView
+{
+    self.segment = [[UISegmentedControl alloc] initWithItems:@[@"支出", @"收入"]];
+    self.segment.frame = CGRectMake(0, 64, DAScreenWidth, 64);
+    [self addSubview:self.segment];
+}
 
 @end

@@ -47,15 +47,11 @@
 }
 -(void)sendMessageToAlarmWith:(NSMutableArray *)mutArray
 {
-    
-    
     for (NSDictionary *dic in mutArray) {
         AlarmModel *model = [[AlarmModel alloc] init];
         [model setValuesForKeysWithDictionary:dic];
         [self.tempArray addObject:model];
     }
-    
-    
     [self.tableView reloadData];
     DALog(@"=========%@",self.tempArray);
 }

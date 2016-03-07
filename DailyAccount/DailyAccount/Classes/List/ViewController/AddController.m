@@ -83,31 +83,25 @@
 #pragma mark 导航栏右侧按钮点击事件
 -(void)rightBarButtonItemAction
 {
-    
+    if (self.string == nil || self.expireStr == nil) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"提醒的内容不能为空" preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alert animated:YES completion:nil];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:cancelAction];
+    }else{
+        
     [self.dict setObject:self.string forKey:@"name"];
     [self.dict setObject:self.expireStr forKey:@"time"];
     
     DALog(@"------%@",_dict);
-    
-    
-    
-//
     self.mutbleArray = [NSMutableArray arrayWithObjects:self.dict, nil];
-    
-    
-//   self.mutbleArray = [NSMutableArray arrayWithObjects:self.string,self.expireStr, nil];
-//    [self.dict setObject:self.mutbleArray forKey:@"list"];
-
-    
-    DALog(@"++++++ %@",self.mutbleArray);
-    
-    //DALog(@"------- %@",self.dict);
     
     if ([self.delegate respondsToSelector:@selector(sendMessageToAlarmWith:)]) {
         [self.delegate sendMessageToAlarmWith:self.mutbleArray];
     }
 
     [self.navigationController popToRootViewControllerAnimated:YES];
+    }
 }
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

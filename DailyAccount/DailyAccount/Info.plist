@@ -158,5 +158,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>iew controller-based status bar appearance</key>
+	<false/>
 </dict>
 </plist>

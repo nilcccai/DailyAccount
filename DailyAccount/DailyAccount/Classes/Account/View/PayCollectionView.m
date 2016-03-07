@@ -8,6 +8,8 @@
 
 #import "PayCollectionView.h"
 #import "ButtonCollectionViewCell.h"
+#import "AccountManger.h"
+#import "HHHorizontalPagingView.h"
 
 @interface PayCollectionView ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -24,7 +26,7 @@ static NSString *collectionViewCellIdentifier = @"payCell";
 {
     if (_name == nil)
     {
-        _name = [NSMutableArray arrayWithObjects:@"一般", @"餐饮", @"交通", @"酒水", @"水果", @"零食", @"买菜", @"服饰", @"生活用品", @"话费", @"化妆品", @"房租", @"电影", @"淘宝", @"还钱", @"红包", @"药品", @"其他", nil];
+        _name = [NSMutableArray arrayWithObjects:@"一般", @"餐饮", @"交通", @"酒水", @"水果", @"零食", @"买菜", @"服饰", @"日用品", @"话费", @"化妆品", @"房租", @"电影", @"淘宝", @"还钱", @"红包", @"药品", @"其他", nil];
     }
     return _name;
 }
@@ -73,7 +75,12 @@ static NSString *collectionViewCellIdentifier = @"payCell";
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"%@", self.picture[indexPath.row]);
+    [AccountManger shareInstance].number = YES;
+    self.payblock(self.name[indexPath.row], self.picture[indexPath.row]);
     
+    return;
 }
+
 
 @end

@@ -23,6 +23,7 @@
      _alarmModel = alarmModel;
     self.nameLabel.text = alarmModel.name;
     self.dateLabel.text = alarmModel.time;
+    self.fateLabel.text = alarmModel.interval;
 }
 
 

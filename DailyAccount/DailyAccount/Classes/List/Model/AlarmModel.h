@@ -12,4 +12,5 @@
 
 @property(nonatomic,copy)NSString *name;
 @property(nonatomic,copy)NSString *time;
+@property(nonatomic,copy)NSString *interval;
 @end

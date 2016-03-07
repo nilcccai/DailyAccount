@@ -57,6 +57,8 @@
 		C288C4271C88406C0081CA09 /* AccountBookVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = C288C4261C88406C0081CA09 /* AccountBookVIew.m */; };
 		C288C42A1C885DEC0081CA09 /* AccountBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C288C4291C885DEC0081CA09 /* AccountBookViewController.m */; };
 		C288C42D1C8867B00081CA09 /* AccountBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C288C42C1C8867B00081CA09 /* AccountBookCell.m */; };
+		FD1ECA221C8D23F10095A333 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1ECA201C8D23F10095A333 /* ListTableViewCell.m */; };
+		FD1ECA231C8D23F10095A333 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD1ECA211C8D23F10095A333 /* ListTableViewCell.xib */; };
 		FDF92DA61C8AB75100B0ABD5 /* CalendarButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF92D921C8AB75100B0ABD5 /* CalendarButtonController.m */; };
 		FDF92DA71C8AB75100B0ABD5 /* CalendarButtonController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF92D931C8AB75100B0ABD5 /* CalendarButtonController.xib */; };
 		FDF92DA81C8AB75100B0ABD5 /* AlarmButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF92D951C8AB75100B0ABD5 /* AlarmButtonController.m */; };
@@ -186,6 +188,9 @@
 		C288C42C1C8867B00081CA09 /* AccountBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountBookCell.m; sourceTree = "<group>"; };
 		D4328AB333B76A497BCA3CEE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EB73A898A73925E7E2427018 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FD1ECA1F1C8D23F10095A333 /* ListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
+		FD1ECA201C8D23F10095A333 /* ListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+		FD1ECA211C8D23F10095A333 /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		FDF92D911C8AB75100B0ABD5 /* CalendarButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarButtonController.h; sourceTree = "<group>"; };
 		FDF92D921C8AB75100B0ABD5 /* CalendarButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarButtonController.m; sourceTree = "<group>"; };
 		FDF92D931C8AB75100B0ABD5 /* CalendarButtonController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarButtonController.xib; sourceTree = "<group>"; };
@@ -387,6 +392,9 @@
 		C224B5E11C8596A000A89D75 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FD1ECA1F1C8D23F10095A333 /* ListTableViewCell.h */,
+				FD1ECA201C8D23F10095A333 /* ListTableViewCell.m */,
+				FD1ECA211C8D23F10095A333 /* ListTableViewCell.xib */,
 				FDF92DDB1C8AB82900B0ABD5 /* AlarmButtonCellCell.h */,
 				FDF92DDC1C8AB82900B0ABD5 /* AlarmButtonCellCell.m */,
 				FDF92DDD1C8AB82900B0ABD5 /* AlarmButtonCellCell.xib */,
@@ -719,6 +727,7 @@
 				C269834D1C8AC72A004849FF /* ButtonCollectionViewCell.xib in Resources */,
 				C224B5CA1C85963D00A89D75 /* LaunchScreen.storyboard in Resources */,
 				C224B5C71C85963D00A89D75 /* Assets.xcassets in Resources */,
+				FD1ECA231C8D23F10095A333 /* ListTableViewCell.xib in Resources */,
 				FDF92DAB1C8AB75100B0ABD5 /* AddController.xib in Resources */,
 				C26983481C8AC669004849FF /* HHHeaderView.xib in Resources */,
 				FDF92DB11C8AB75100B0ABD5 /* MoneyViewController.xib in Resources */,
@@ -818,6 +827,7 @@
 				FDF92DFE1C8AB93500B0ABD5 /* AlarmModel.m in Sources */,
 				C224B5FA1C8596A000A89D75 /* AccountViewController.m in Sources */,
 				C224B5FC1C8596A000A89D75 /* TabBarController.m in Sources */,
+				FD1ECA221C8D23F10095A333 /* ListTableViewCell.m in Sources */,
 				FDF92DEA1C8AB82900B0ABD5 /* SZCalendarPicker.m in Sources */,
 				C224B5F91C8596A000A89D75 /* AccountView.m in Sources */,
 				C288C3F71C87EC1F0081CA09 /* UserViewController.m in Sources */,

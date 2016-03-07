@@ -19,14 +19,9 @@
 @property(nonatomic,strong)UIButton *calendarButton;
 @property(nonatomic,assign)NSInteger tag;
 @property(nonatomic,strong)UITableView *tableView;
-
 @property(nonatomic,assign)CGRect rect;
-
-
 @end
-
 @implementation ListViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setAccountView];
@@ -35,7 +30,6 @@
     self.tableView.delegate = self;
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ListTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"cell"];
-
 }
 
 #pragma mark 添加显示记账的view
@@ -55,10 +49,6 @@
     self.tableView = [[UITableView alloc] initWithFrame:self.rect style:UITableViewStylePlain];
 
     [self.view addSubview:self.tableView];
-
-    
-   // DALog(@"accountView %@",self.accountView.frame);
-    
     //    添加闹铃
     self.alarmButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.mainView addSubview:self.alarmButton];
@@ -118,36 +108,30 @@
             self.mainView.frame = CGRectMake(0,200, DAScreenWidth,100);
             self.tableView.frame = CGRectMake(0,300, DAScreenWidth, DAScreenHeight - 300);
         }];
-        
         self.tag++;
-        
     }else if(self.tag == 101){
         [UIView animateWithDuration:0.5 animations:^{
             self.accountView.frame = CGRectMake(0, -200, DAScreenWidth,200);
             self.mainView.frame = CGRectMake(0,64, DAScreenWidth, 100);
             self.tableView.frame = self.rect;
-
         }];
 
         self.tag--;
     }
 }
+
 #pragma mark 添加日历按钮
 -(void)calendarButtonAction
 {
     CalendarButtonController *cbc = [[CalendarButtonController alloc] init];
     [self.navigationController pushViewController:cbc animated:YES];
-    
-    
 }
-
 #pragma mark cell数据源
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return 10;
 }
-
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
@@ -156,4 +140,10 @@
 }
 
 #pragma mark 插入数据
+
+
+
+
+
+
 @end

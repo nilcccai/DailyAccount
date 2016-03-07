@@ -143,7 +143,11 @@
     return @"删除";
 }
 
-
+#pragma mark 改变cell的高度
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
+}
 
 
 @end

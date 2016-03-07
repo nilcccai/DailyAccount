@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
 }
 
 - (IBAction)quxiaoAction:(UIBarButtonItem *)sender {
@@ -34,11 +33,12 @@
     // 创建一个日期格式器
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     // 为日期格式器设置格式字符串
-    [dateFormatter setDateFormat:@"yyyy年MM月dd日"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     // 使用日期格式器格式化日期、时间
     NSString *destDateString = [dateFormatter stringFromDate:selected];
     NSString *message =  [NSString stringWithFormat:
                           @"%@", destDateString];
+    
     if ([self.delegate respondsToSelector:@selector(sendMessageToExpireWith:)]) {
         [self.delegate sendMessageToExpireWith:message];
     }

@@ -13,6 +13,7 @@
 #import "TimeViewController.h"
 #import "MoneyViewController.h"
 @interface AddController ()<RemindViewControllerDelegate,MoneyViewControllerDelegate,TimeViewControllerDelegate,ExpireViewControllerDelegate>
+
 @property(nonatomic,strong)NSArray *titleArray;
 @property(nonatomic,copy)NSString *string;
 @property(nonatomic,copy)NSString *moneyStr;
@@ -21,6 +22,8 @@
 
 @property(nonatomic,strong)NSMutableArray *mutbleArray;
 @property(nonatomic,strong)NSMutableDictionary *dict;
+
+@property(nonatomic,assign)NSInteger dateStr;
 @end
 @implementation AddController
 
@@ -90,10 +93,35 @@
         [alert addAction:cancelAction];
     }else{
         
-    [self.dict setObject:self.string forKey:@"name"];
-    [self.dict setObject:self.expireStr forKey:@"time"];
+        NSDate *currentDate = [NSDate date];//获取当前时间，日期
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyy-MM-dd"];
+        NSString *dateString = [dateFormatter stringFromDate:currentDate];
+        
+        NSLog(@"dateString:%@",dateString);
+        
+        NSDate *currentDate1 = [dateFormatter dateFromString:dateString];
+        
+        //设置转换格式
+        NSDateFormatter*formatter=[[NSDateFormatter alloc]init];
+        
+        [formatter setDateFormat:@"yyyy-MM-dd"];
+        //NSString转NSDate
+        NSDate*endData=[formatter dateFromString:self.expireStr];
+        
+        DALog(@"endDate :%@",endData);
+        
+        NSTimeInterval time = [endData timeIntervalSinceDate:currentDate1];
+        
+        int days = ((int)time)/(3600*24);
+        
+        NSString *dateContent = [[NSString alloc] initWithFormat:@"%i天",days];
     
-    DALog(@"------%@",_dict);
+        DALog(@"%@-----",dateContent);
+        [self.dict setObject:self.string forKey:@"name"];
+        [self.dict setObject:self.expireStr forKey:@"time"];
+        [self.dict setObject:dateContent forKey:@"interval"];
+
     self.mutbleArray = [NSMutableArray arrayWithObjects:self.dict, nil];
     
     if ([self.delegate respondsToSelector:@selector(sendMessageToAlarmWith:)]) {
@@ -103,6 +131,7 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
     }
 }
+
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -134,7 +163,6 @@
     if (indexPath.row == 3) {
         cell.detailTextLabel.text = self.moneyStr;
     }
-    
     return cell;
 }
 #pragma mark 点击cell事件
@@ -160,7 +188,5 @@
     }
 }
 
-
-#pragma mark 
 
 @end

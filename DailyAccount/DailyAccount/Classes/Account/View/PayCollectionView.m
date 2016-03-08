@@ -48,7 +48,7 @@ static NSString *collectionViewCellIdentifier = @"payCell";
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     
     PayCollectionView *payCollectionView = [[PayCollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
-    payCollectionView.backgroundColor = [UIColor clearColor];
+    payCollectionView.backgroundColor = [UIColor yellowColor];
     payCollectionView.dataSource = payCollectionView;
     payCollectionView.delegate = payCollectionView;
     

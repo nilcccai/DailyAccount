@@ -51,7 +51,6 @@ static NSString *collectionViewCellIdentifier = @"incomeCell";
     incomeCollectionView.backgroundColor = [UIColor clearColor];
     incomeCollectionView.dataSource = incomeCollectionView;
     incomeCollectionView.delegate = incomeCollectionView;
-    
     [incomeCollectionView registerClass:[ButtonCollectionViewCell class] forCellWithReuseIdentifier:collectionViewCellIdentifier];
     return incomeCollectionView;
 }

@@ -133,7 +133,8 @@
 {
 //     必须首先修改数据源
     [self.tempArray removeObjectAtIndex:indexPath.section];
-//   修改UI
+
+    //   修改UI
     [self.tableView reloadData];
 }
 

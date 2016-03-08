@@ -17,10 +17,8 @@
 
 @property (nonatomic, strong) UIBarButtonItem *leftPic;
 @property (nonatomic, strong) UIBarButtonItem *leftName;
-
 @property (nonatomic, strong) UIButton *segmentButton;
 @property (nonatomic, strong) UIButton *segmentButton2;
-
 @property (nonatomic, strong) HHHeaderView *headerView;
 @property (nonatomic, strong) IncomeCollectionView *incomeView;
 @property (nonatomic, strong) PayCollectionView *payView;
@@ -56,9 +54,6 @@
     pagingView.segmentButtonSize = CGSizeMake(60, 25);
    
     [self.view addSubview:pagingView];
-    
-    
-    
     // 价格输入框
     self.prictTF = [[UITextField alloc] initWithFrame:CGRectMake(0, 20, DAScreenWidth - 100, 44)];
     self.prictTF.borderStyle = UITextBorderStyleRoundedRect;
@@ -106,7 +101,6 @@
     };
 
 }
-
 #pragma mark 保存按钮
 - (void)rightButtonDidClicked:(UIBarButtonItem *)sender
 {
@@ -122,7 +116,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 

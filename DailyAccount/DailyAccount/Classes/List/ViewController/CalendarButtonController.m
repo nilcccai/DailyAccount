@@ -8,7 +8,12 @@
 
 #import "CalendarButtonController.h"
 #import "SZCalendarPicker.h"
+#import "AccountViewController.h"
+#import "SZCalendarCell.h"
+
+
 @interface CalendarButtonController ()
+@property(nonatomic,strong)SZCalendarPicker *calendarPicker;
 
 @end
 
@@ -20,17 +25,23 @@
     self.navigationItem.title = @"日历";
 //    日历按钮
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    SZCalendarPicker *calendarPicker = [SZCalendarPicker showOnView:self.view];
-    calendarPicker.today = [NSDate date];
-    calendarPicker.date = calendarPicker.today;
-    calendarPicker.frame = CGRectMake(0, 100, self.view.frame.size.width, 352);
-    calendarPicker.calendarBlock = ^(NSInteger day, NSInteger month, NSInteger year){
+    self.calendarPicker = [SZCalendarPicker showOnView:self.view];
+    self.calendarPicker.today = [NSDate date];
+    self.calendarPicker.date = self.calendarPicker.today;
+    self.calendarPicker.frame = CGRectMake(0,64, self.view.frame.size.width, 352);
+    self.calendarPicker.calendarBlock = ^(NSInteger day, NSInteger month, NSInteger year){
         
         NSLog(@"%li-%li-%li", (long)year,(long)month,(long)day);
+    
     };
-
+    [self.calendarPicker.button addTarget:self action:@selector(clickbtn) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
-
+-(void)clickbtn
+{
+    AccountViewController *avc = [[AccountViewController alloc] init];
+    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:avc];
+    [self.navigationController presentViewController:nv animated:YES completion:nil];
+}
 @end

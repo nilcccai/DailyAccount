@@ -12,6 +12,7 @@
 @property (nonatomic , strong) NSDate *date;
 @property (nonatomic , strong) NSDate *today;
 @property (nonatomic, copy) void(^calendarBlock)(NSInteger day, NSInteger month, NSInteger year);
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 + (instancetype)showOnView:(UIView *)view;
 @end

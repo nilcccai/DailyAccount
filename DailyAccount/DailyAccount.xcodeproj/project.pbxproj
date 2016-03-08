@@ -58,6 +58,10 @@
 		C288C42A1C885DEC0081CA09 /* AccountBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C288C4291C885DEC0081CA09 /* AccountBookViewController.m */; };
 		C288C42D1C8867B00081CA09 /* AccountBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C288C42C1C8867B00081CA09 /* AccountBookCell.m */; };
 		C2C9D8821C8D366F00A6212A /* AccountManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9D8811C8D366F00A6212A /* AccountManger.m */; };
+		FD056C581C8D898400F1F439 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD056C561C8D898400F1F439 /* ListTableViewCell.m */; };
+		FD056C591C8D898400F1F439 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD056C571C8D898400F1F439 /* ListTableViewCell.xib */; };
+		FD05ABD61C8DD005004F36BD /* SZCalendarPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FD05ABD41C8DD005004F36BD /* SZCalendarPicker.m */; };
+		FD05ABD71C8DD005004F36BD /* SZCalendarPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD05ABD51C8DD005004F36BD /* SZCalendarPicker.xib */; };
 		FDF92DA61C8AB75100B0ABD5 /* CalendarButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF92D921C8AB75100B0ABD5 /* CalendarButtonController.m */; };
 		FDF92DA71C8AB75100B0ABD5 /* CalendarButtonController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF92D931C8AB75100B0ABD5 /* CalendarButtonController.xib */; };
 		FDF92DA81C8AB75100B0ABD5 /* AlarmButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF92D951C8AB75100B0ABD5 /* AlarmButtonController.m */; };
@@ -77,8 +81,6 @@
 		FDF92DE71C8AB82900B0ABD5 /* AlarmButtonCellCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF92DDD1C8AB82900B0ABD5 /* AlarmButtonCellCell.xib */; };
 		FDF92DE81C8AB82900B0ABD5 /* AddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF92DDF1C8AB82900B0ABD5 /* AddCell.m */; };
 		FDF92DE91C8AB82900B0ABD5 /* AddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF92DE01C8AB82900B0ABD5 /* AddCell.xib */; };
-		FDF92DEA1C8AB82900B0ABD5 /* SZCalendarPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF92DE21C8AB82900B0ABD5 /* SZCalendarPicker.m */; };
-		FDF92DEB1C8AB82900B0ABD5 /* SZCalendarPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF92DE31C8AB82900B0ABD5 /* SZCalendarPicker.xib */; };
 		FDF92DEC1C8AB82900B0ABD5 /* SZCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF92DE51C8AB82900B0ABD5 /* SZCalendarCell.m */; };
 		FDF92DFE1C8AB93500B0ABD5 /* AlarmModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF92DFD1C8AB93500B0ABD5 /* AlarmModel.m */; };
 /* End PBXBuildFile section */
@@ -189,6 +191,12 @@
 		C2C9D8811C8D366F00A6212A /* AccountManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManger.m; sourceTree = "<group>"; };
 		D4328AB333B76A497BCA3CEE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EB73A898A73925E7E2427018 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FD056C551C8D898400F1F439 /* ListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
+		FD056C561C8D898400F1F439 /* ListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+		FD056C571C8D898400F1F439 /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		FD05ABD31C8DD005004F36BD /* SZCalendarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZCalendarPicker.h; sourceTree = "<group>"; };
+		FD05ABD41C8DD005004F36BD /* SZCalendarPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZCalendarPicker.m; sourceTree = "<group>"; };
+		FD05ABD51C8DD005004F36BD /* SZCalendarPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SZCalendarPicker.xib; sourceTree = "<group>"; };
 		FDF92D911C8AB75100B0ABD5 /* CalendarButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarButtonController.h; sourceTree = "<group>"; };
 		FDF92D921C8AB75100B0ABD5 /* CalendarButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarButtonController.m; sourceTree = "<group>"; };
 		FDF92D931C8AB75100B0ABD5 /* CalendarButtonController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarButtonController.xib; sourceTree = "<group>"; };
@@ -218,9 +226,6 @@
 		FDF92DDE1C8AB82900B0ABD5 /* AddCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCell.h; sourceTree = "<group>"; };
 		FDF92DDF1C8AB82900B0ABD5 /* AddCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCell.m; sourceTree = "<group>"; };
 		FDF92DE01C8AB82900B0ABD5 /* AddCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCell.xib; sourceTree = "<group>"; };
-		FDF92DE11C8AB82900B0ABD5 /* SZCalendarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZCalendarPicker.h; sourceTree = "<group>"; };
-		FDF92DE21C8AB82900B0ABD5 /* SZCalendarPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZCalendarPicker.m; sourceTree = "<group>"; };
-		FDF92DE31C8AB82900B0ABD5 /* SZCalendarPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SZCalendarPicker.xib; sourceTree = "<group>"; };
 		FDF92DE41C8AB82900B0ABD5 /* SZCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZCalendarCell.h; sourceTree = "<group>"; };
 		FDF92DE51C8AB82900B0ABD5 /* SZCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZCalendarCell.m; sourceTree = "<group>"; };
 		FDF92DFC1C8AB93500B0ABD5 /* AlarmModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmModel.h; sourceTree = "<group>"; };
@@ -392,15 +397,18 @@
 		C224B5E11C8596A000A89D75 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FD056C551C8D898400F1F439 /* ListTableViewCell.h */,
+				FD056C561C8D898400F1F439 /* ListTableViewCell.m */,
+				FD056C571C8D898400F1F439 /* ListTableViewCell.xib */,
 				FDF92DDB1C8AB82900B0ABD5 /* AlarmButtonCellCell.h */,
 				FDF92DDC1C8AB82900B0ABD5 /* AlarmButtonCellCell.m */,
 				FDF92DDD1C8AB82900B0ABD5 /* AlarmButtonCellCell.xib */,
 				FDF92DDE1C8AB82900B0ABD5 /* AddCell.h */,
 				FDF92DDF1C8AB82900B0ABD5 /* AddCell.m */,
 				FDF92DE01C8AB82900B0ABD5 /* AddCell.xib */,
-				FDF92DE11C8AB82900B0ABD5 /* SZCalendarPicker.h */,
-				FDF92DE21C8AB82900B0ABD5 /* SZCalendarPicker.m */,
-				FDF92DE31C8AB82900B0ABD5 /* SZCalendarPicker.xib */,
+				FD05ABD31C8DD005004F36BD /* SZCalendarPicker.h */,
+				FD05ABD41C8DD005004F36BD /* SZCalendarPicker.m */,
+				FD05ABD51C8DD005004F36BD /* SZCalendarPicker.xib */,
 				FDF92DE41C8AB82900B0ABD5 /* SZCalendarCell.h */,
 				FDF92DE51C8AB82900B0ABD5 /* SZCalendarCell.m */,
 			);
@@ -693,6 +701,7 @@
 				TargetAttributes = {
 					C224B5B31C85963D00A89D75 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8L9BZ883W8;
 					};
 				};
 			};
@@ -724,12 +733,13 @@
 				C269834D1C8AC72A004849FF /* ButtonCollectionViewCell.xib in Resources */,
 				C224B5CA1C85963D00A89D75 /* LaunchScreen.storyboard in Resources */,
 				C224B5C71C85963D00A89D75 /* Assets.xcassets in Resources */,
+				FD056C591C8D898400F1F439 /* ListTableViewCell.xib in Resources */,
 				FDF92DAB1C8AB75100B0ABD5 /* AddController.xib in Resources */,
 				C26983481C8AC669004849FF /* HHHeaderView.xib in Resources */,
 				FDF92DB11C8AB75100B0ABD5 /* MoneyViewController.xib in Resources */,
 				FDF92DB31C8AB75100B0ABD5 /* RemindViewController.xib in Resources */,
+				FD05ABD71C8DD005004F36BD /* SZCalendarPicker.xib in Resources */,
 				FDF92DA91C8AB75100B0ABD5 /* AlarmButtonController.xib in Resources */,
-				FDF92DEB1C8AB82900B0ABD5 /* SZCalendarPicker.xib in Resources */,
 				FDF92DE71C8AB82900B0ABD5 /* AlarmButtonCellCell.xib in Resources */,
 				FDF92DAF1C8AB75100B0ABD5 /* TimeViewController.xib in Resources */,
 				FDF92DA71C8AB75100B0ABD5 /* CalendarButtonController.xib in Resources */,
@@ -792,6 +802,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD056C581C8D898400F1F439 /* ListTableViewCell.m in Sources */,
 				C288C3F51C87EC1F0081CA09 /* LoginViewController.m in Sources */,
 				C288C40D1C87EC990081CA09 /* SafetyView.m in Sources */,
 				C20540B71C896055003E0F7A /* HHHorizontalPagingView.m in Sources */,
@@ -821,9 +832,9 @@
 				C224B5FE1C8596A000A89D75 /* ListViewController.m in Sources */,
 				C288C3FC1C87EC660081CA09 /* SafetyViewController.m in Sources */,
 				FDF92DFE1C8AB93500B0ABD5 /* AlarmModel.m in Sources */,
+				FD05ABD61C8DD005004F36BD /* SZCalendarPicker.m in Sources */,
 				C224B5FA1C8596A000A89D75 /* AccountViewController.m in Sources */,
 				C224B5FC1C8596A000A89D75 /* TabBarController.m in Sources */,
-				FDF92DEA1C8AB82900B0ABD5 /* SZCalendarPicker.m in Sources */,
 				C224B5F91C8596A000A89D75 /* AccountView.m in Sources */,
 				C288C3F71C87EC1F0081CA09 /* UserViewController.m in Sources */,
 				FDF92DB21C8AB75100B0ABD5 /* RemindViewController.m in Sources */,
@@ -955,6 +966,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyAccount/Classes/AppDelegate/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyAccount/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -970,6 +982,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyAccount/Classes/AppDelegate/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyAccount/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
